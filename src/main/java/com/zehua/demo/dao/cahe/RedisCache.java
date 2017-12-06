@@ -4,7 +4,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
-import com.zehua.demo.Util.ApplicationContextHolder;
+import com.zehua.demo.util.ApplicationContextHolder;
 import org.apache.ibatis.cache.Cache;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;

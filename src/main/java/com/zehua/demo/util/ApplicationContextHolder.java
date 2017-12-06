@@ -1,4 +1,4 @@
-package com.zehua.demo.Util;
+package com.zehua.demo.util;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
