@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: demo
+# 特定Profile属性从跟标准application.properties相同的路径加载，并且特定profile文件会覆盖默认的配置。
+  profiles:
+    active: dev
+    include: druid,redis #添加druid配置和redis配置
+# HTTP encoding
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+---
+#数据源
+spring:
+  #profiles: prod
+  datasource:
+    driverClass: com.alibaba.druid.pool.DruidDataSource #druid数据源
+    url: jdbc:mysql://rm-wz9ri9uo66o0unxu9o.mysql.rds.aliyuncs.com:3306/demo?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    driverClassName: com.mysql.jdbc.Driver
+    username: root
+    password: Qq523786283
+
